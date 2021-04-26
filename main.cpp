@@ -11,6 +11,7 @@ int main()
 	Termwin tWin(splitCoord(scrSiz), '`');
 	Termwin tWin2(8, 8, '#');
 	Termwin tWin3(5, 5, '-');
+	tWin.gCoord = Coord(10,10);
 	tWin.print("lsms",Coord(0,0), tWin3.splitToString().c_str(), Coord(6,1), tWin2.splitToString().c_str());
 	tWin.draw();
 	getchar();

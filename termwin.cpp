@@ -64,7 +64,8 @@ void Termwin::print(const char *fmt, ...)
 {
 	va_list args;
 	va_start(args, fmt);
-	for (int i = 0; fmt[i] != '\0'; i++)
+	printf("\033[%d;%dH", gCoord.y, gCoord.x);
+    for (int i = 0; fmt[i] != '\0'; i++)
 	{
 		switch (fmt[i])
 		{

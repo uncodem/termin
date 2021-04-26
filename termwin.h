@@ -20,9 +20,10 @@ class Termwin
 	std::string data;
 	int cx, cy;
 	int px, py;
-	Coord dimen;
+    Coord dimen;
 	int size;
 public:
+    Coord gCoord;
 	Termwin(int width, int height, char bg);
 	void print(const char *fmt, ...);
 	char inch(int x, int y); 
