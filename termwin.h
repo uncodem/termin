@@ -2,6 +2,7 @@
 #define TERMWIN_H_
 
 #include <string>
+#include <vector>
 
 #define splitCoord(c) c.x, c.y
 #define operCoord(c, oper) c.x = c.x oper; c.y = c.y oper 
@@ -18,6 +19,7 @@ public:
 class Termwin
 {
 	std::string data;
+	std::vector<std::string> topper;
 	int cx, cy;
 	int px, py;
     Coord dimen;
