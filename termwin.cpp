@@ -136,7 +136,7 @@ Coord Termwin::getcoord()
 void Termwin::draw()
 {
     std::string outBuf = splitToString();
-    printf("\033[%d;%dH%s", gCoord.y, gCoord.x, outBuf.c_str());
+    printf("%s", outBuf.c_str());
     fflush(stdout);
 }
 
